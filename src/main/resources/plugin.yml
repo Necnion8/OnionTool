@@ -1,0 +1,102 @@
+name: OnionTool
+version: '${version}'
+main: com.gmail.necnionch.myplugin.oniontool.bukkit.OnionToolPlugin
+api-version: 1.13
+authors: [ Necnion8 ]
+description: 玉ねぎが提供する "あると便利かも" 管理者向けプラグイン
+
+commands:
+  oniontoolgui:
+    permission: oniontool.command.gui
+    aliases: [ o/ ]
+    description: クイック画面を開きます
+    usage: /<command>
+
+  onionheal:
+    permission: oniontool.command.heal
+    aliases: [ o/heal ]
+    description: |-
+      プレイヤーのHPを回復させます
+      複数の対象やエンティティにも使用できます。
+    usage: |-
+      /<command>
+      /<command> (player/uuid)
+      /<command> (selector)
+
+  oniongod:
+    permission: oniontool.command.god
+    aliases: [ o/god ]
+    description: プレイヤーの無敵モードを設定します
+    usage: |-
+      /<command>
+      /<command> (player/uuid)
+      /<command> (selector)
+
+  onionungod:
+    permission: oniontool.command.god
+    aliases: [ o/ungod ]
+    description: プレイヤーの無敵モードを解除します
+    usage: |-
+      /<command>
+      /<command> (player/uuid)
+      /<command> (selector)
+
+  onionviewdamage:
+    permission: oniontool.command.viewdamage
+    aliases: [ o/viewdamage ]
+    description: 被ダメージ表示機能を切り替えます
+    usage: /<command>
+
+  onionreflectdamage:
+    permission: oniontool.command.reflectdamage
+    aliases: [ o/reflectdamage ]
+    description: ダメージ反射機能を切り替えます
+    usage: /<command>
+
+  onionrepairitem:
+    permission: oniontool.command.repairitem
+    aliases: [ o/repairitem ]
+    description: 手持ちアイテムの耐久値を回復します
+    usage: /<command>
+
+  onionaddcmditem:
+    permission: oniontool.command.cmditem
+    aliases: [ o/addcmditem ]
+    description: 手持ちアイテムに実行コマンドを追加します
+    usage: /<command> (command)
+
+  onionremovecmditem:
+    permission: oniontool.command.cmditem
+    aliases: [ o/removecmditem ]
+    description: 手持ちアイテムから実行コマンドを削除します
+    usage: /<command> (index)
+
+  onionlistcmditem:
+    permission: oniontool.command.cmditem
+    aliases: [ o/listcmditem ]
+    description: 手持ちアイテムの実行コマンドを表示します
+    usage: /<command>
+
+  onionbright:
+    permission: oniontool.command.bright
+    aliases: [ o/bright ]
+    description: 暗視効果を切り替えます
+    usage: /<command>
+
+permissions:
+  oniontool.command.gui:
+    default: op
+  oniontool.command.heal:
+    default: op
+  oniontool.command.god:
+    default: op
+  oniontool.command.viewdamage:
+    default: op
+  oniontool.command.reflectdamage:
+    default: op
+  oniontool.command.repairitem:
+    default: op
+  oniontool.command.cmditem:
+    default: op
+  oniontool.command.bright:
+    default: op
