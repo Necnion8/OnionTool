@@ -26,22 +26,22 @@
 
 - プレイヤーのHPを回復させます - `/onionheal`, `/o/heal`
 > ※ 複数の対象やエンティティにも使用できます<br>
-> 引数: `/o/heal (player/uuid/selector)`<br>
+> 引数: `/o/heal [player/uuid/selector]`<br>
 > 権限: `oniontool.command.heal` (default: OP)
 <br>
 
 - プレイヤーの無敵モードを設定します - `/oniongod`, `/o/god`
-> 引数: `/o/god (player/uuid/selector)`<br>
+> 引数: `/o/god [player/uuid/selector]`<br>
 > 権限: `oniontool.command.god` (default: OP)
 <br>
 
 - プレイヤーの無敵モードを解除します - `/onionungod`, `/o/ungod`
-> 引数: `/o/ungod (player/uuid/selector)`<br>
+> 引数: `/o/ungod [player/uuid/selector]`<br>
 > 権限: `oniontool.command.god` (default: OP)
 <br>
 
 - 暗視効果を切り替えます - `/onionbright`, `/o/bright`
-> 引数: `/o/bright (player/uuid/selector)`<br>
+> 引数: `/o/bright [player/uuid/selector]`<br>
 > 権限: `oniontool.command.bright` (default: OP)
 <br>
 
